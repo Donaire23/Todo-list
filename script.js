@@ -5,7 +5,8 @@ let dateInput = document.querySelector("#dateInput");
 let addBtn = document.querySelector("#addBtn");
 let taskTable = document.querySelector("#taskTable");
 
-const addTask = () => { 
+const addTask = (e) => { 
+  e.preventDefault()
 
  if(taskInput.value == "" && dateInput.value == "") {
   window.alert("input task and date")
